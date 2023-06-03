@@ -32,10 +32,10 @@ namespace xtark_driver
         this->declare_parameter<int>("control_rate", 50);
         this->get_parameter("control_rate", control_rate_);
 
-        this->declare_parameter<double>("linear_correction_factor", 1.0);
+        this->declare_parameter<double>("linear_correction_factor", 0.8);
         this->get_parameter("linear_correction_factor", linear_correction_factor_);
 
-        this->declare_parameter<int>("servo_bias", 0);
+        this->declare_parameter<int>("servo_bias", -4);
         this->get_parameter("servo_bias", servo_bias_);
 
         this->declare_parameter<bool>("publish_odom_transform", true);
