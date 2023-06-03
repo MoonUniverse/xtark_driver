@@ -9,7 +9,7 @@ def generate_launch_description():
         name='tf_static',
         package='tf2_ros',
         executable='static_transform_publisher',
-        arguments = ['0.12', '0', '0', '0', '0', '0', 'base_link', 'laser']
+        arguments = ['0.12', '0', '0', '3.14', '0', '0', 'base_footprint', 'laser']
     )
 
     static_tf_baselink_basefootprint_link = Node(
